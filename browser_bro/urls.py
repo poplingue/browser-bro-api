@@ -17,10 +17,16 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from api.resources import CustomResource
 from django.urls import path
+from rest_framework import routers
 
 custom_resource = CustomResource()
+search_engine = SearchEngine()
+
+router = routers.SimpleRouter()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(custom_resource.urls)),
 ]
+
+urlpatterns += router.urls
