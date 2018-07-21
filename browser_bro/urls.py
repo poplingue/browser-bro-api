@@ -20,7 +20,6 @@ from django.urls import path
 from rest_framework import routers
 
 custom_resource = CustomResource()
-search_engine = SearchEngine()
 
 router = routers.SimpleRouter()
 
