@@ -25,7 +25,7 @@ SECRET_KEY = 'z5!n--_+k=log7vm(087xm!^1t0#-p@v807@+3j$r!$ow)b3=i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['browser-bro.consolelog.fr']
 
 
 # Application definition
